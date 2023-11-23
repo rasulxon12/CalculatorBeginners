@@ -70,16 +70,16 @@ class MainActivity : AppCompatActivity() {
 
     var raqamBosildimi = false
     fun clickNumber(number: String) {
-        var ekran1 = binding.tvDisplay.text.toString()
+        var ekran = binding.tvDisplay.text.toString()
 
-            if (ekran1 != "0" && !end) {
-                ekran1 += number
+            if (ekran != "0" && !end) {
+                ekran += number
 
             } else  {
-                ekran1 = number
+                ekran = number
                 end = false
             }
-            binding.tvDisplay.text = ekran1
+            binding.tvDisplay.text = ekran
             raqamBosildimi = true
         }
 
